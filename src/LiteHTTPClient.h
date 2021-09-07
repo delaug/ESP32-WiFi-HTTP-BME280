@@ -5,7 +5,7 @@
 
 class LiteHTTPClient {
     public:
-        void send(String url, String data, String method);
+        void send(String url, String data);
     private:
 
 };
