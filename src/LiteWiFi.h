@@ -7,6 +7,7 @@ class LiteWiFi {
     public:
         void init(char* ssid, char* password);
         bool checkConnection();
+        bool disconnect();
     private:
 
 };

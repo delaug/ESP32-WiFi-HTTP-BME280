@@ -15,9 +15,13 @@ void LiteWiFi::init(char* ssid, char* password) {
     Serial.println("");
     Serial.println("WiFi connected");
     Serial.println("IP address: ");
-    Serial.println(WiFi.localIP());
+    Serial.println(WiFi.localIP());    
 };
 
 bool LiteWiFi::checkConnection() {
     return (WiFi.status() == WL_CONNECTED);
+}
+
+bool LiteWiFi::disconnect() {
+    return WiFi.disconnect();
 }
