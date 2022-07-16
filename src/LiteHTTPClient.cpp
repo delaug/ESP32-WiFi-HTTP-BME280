@@ -6,8 +6,8 @@ void LiteHTTPClient::send(String url, String data) {
        
     url = url + "?" + data;
     
-    Serial.print("URL: ");
-    Serial.println(url);
+    //Serial.print("URL: ");
+    //Serial.println(url);
 
     http.begin(url); //Specify the URL
 
@@ -16,13 +16,13 @@ void LiteHTTPClient::send(String url, String data) {
         
     if (httpCode > 0) {         //Check for the returning code 
         String payload = http.getString();
-        Serial.print("Code: ");
-        Serial.println(httpCode);
-        Serial.print("Payload: ");
-        Serial.println(payload);
+        //Serial.print("Code: ");
+        //Serial.println(httpCode);
+        //Serial.print("Payload: ");
+        //Serial.println(payload);
     } 
     else {
-        Serial.println("Error on HTTP request");
+        //Serial.println("Error on HTTP request");
     } 
     http.end(); //Free the resources    
 };

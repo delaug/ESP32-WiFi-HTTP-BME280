@@ -2,8 +2,8 @@
 
 void LiteWiFi::init(char* ssid, char* password) {
     // We start by connecting to a WiFi network
-    Serial.print("Connecting to ");
-    Serial.println(ssid);
+    //Serial.print("Connecting to ");
+    //Serial.println(ssid);
 
     WiFi.begin(ssid, password);
 
@@ -12,10 +12,10 @@ void LiteWiFi::init(char* ssid, char* password) {
         Serial.print(".");
     }
 
-    Serial.println("");
-    Serial.println("WiFi connected");
-    Serial.println("IP address: ");
-    Serial.println(WiFi.localIP());    
+    //Serial.println("");
+    //Serial.println("WiFi connected");
+    //Serial.println("IP address: ");
+    //Serial.println(WiFi.localIP());    
 };
 
 bool LiteWiFi::checkConnection() {

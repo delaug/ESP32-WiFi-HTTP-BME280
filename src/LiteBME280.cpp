@@ -20,23 +20,23 @@ void LiteBME280::init() {
 void LiteBME280::read() {  
     this->_readSensors(); 
 
-    Serial.print(F("Temperature = "));
-    Serial.print(this->_temp_event.temperature);
-    Serial.println(" *C");
+    //Serial.print(F("Temperature = "));
+    //Serial.print(this->_temp_event.temperature);
+    //Serial.println(" *C");
 
-    Serial.print(F("Humidity = "));
-    Serial.print(this->_humidity_event.relative_humidity);
-    Serial.println(" %");
+    //Serial.print(F("Humidity = "));
+    //Serial.print(this->_humidity_event.relative_humidity);
+    //Serial.println(" %");
 
-    Serial.print(F("Pressure = "));
-    Serial.print(this->_pressure_event.pressure / 1.333F);
-    Serial.println(" mm Hg");
+    //Serial.print(F("Pressure = "));
+    //Serial.print(this->_pressure_event.pressure / 1.333F);
+    //Serial.println(" mm Hg");
 
-    Serial.print(F("Approx altitude = "));
-    Serial.print(this->_bme.readAltitude(SEALEVELPRESSURE_HPA));
-    Serial.println(" m");
+    //Serial.print(F("Approx altitude = "));
+    //Serial.print(this->_bme.readAltitude(SEALEVELPRESSURE_HPA));
+    //Serial.println(" m");
 
-    Serial.println();
+    //Serial.println();
 }
 
 String LiteBME280::getHTTPData() { 
